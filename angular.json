@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ec07be6f-9374-43df-b6fc-328b31dd98c0"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/site-made-in-natural",
+            "outputPath": "dist/SITE-MADE-IN-NATURAL",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,14 +34,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "./src/assets/js/maskedinput_2.js",
-              "./src/assets/js/script.js",
-              "./node_modules/jquery/dist/jquery.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -112,7 +110,5 @@
       }
     }
   },
-  "cli": {
-    "analytics": "56e5d097-1df1-45c7-95aa-1b22d01c9446"
-  }
+  "defaultProject": "SITE-MADE-IN-NATURAL"
 }
